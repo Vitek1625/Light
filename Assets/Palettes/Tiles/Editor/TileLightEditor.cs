@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEditor;
 
-[CustomEditor(typeof(TileCustomData))]
-public class CustomDataFileEditor : Editor
+[CustomEditor(typeof(TileLight))]
+public class TileLightEditor : Editor
 {
     public override void OnInspectorGUI()
     {

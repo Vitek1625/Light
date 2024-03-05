@@ -6,9 +6,11 @@ using UnityEngine;
 public class Player_Movement : MonoBehaviour
 {
     [SerializeField] private Transform movePoint;
+    [SerializeField] private Map map;
 
     public LayerMask stopMovement;
     public float movementSpeed;
+    private bool moving = false;
     
     private void Start()
     {
@@ -20,7 +22,13 @@ public class Player_Movement : MonoBehaviour
 
         if(Vector3.Distance(transform.position, movePoint.position) >= 0.075f)
         {
+            map.updateLasers();
             return;
+        }
+        else if(moving)
+        {
+            moving = false;
+            map.clearUpdateList();
         }
 
         if(Math.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
@@ -29,6 +37,8 @@ public class Player_Movement : MonoBehaviour
             if (!checkForObstacles(movePoint.position, new Vector3(Input.GetAxisRaw("Horizontal"), 0, 0)))
             {
                 movePoint.position = newPoint;
+                map.SetUpdateLaserList(newPoint, new Vector3(Input.GetAxisRaw("Horizontal"), 0, 0));
+                moving = true;
             }
         }
         else if (Math.Abs(Input.GetAxisRaw("Vertical")) == 1f)
@@ -36,7 +46,9 @@ public class Player_Movement : MonoBehaviour
             Vector3 newPoint = movePoint.position + new Vector3(0, Input.GetAxisRaw("Vertical"), 0);
             if (!checkForObstacles(movePoint.position, new Vector3(0, Input.GetAxisRaw("Vertical"), 0)))
             {
-                movePoint.position = newPoint;
+                movePoint.position = newPoint;                //More updates, not only when began moving
+                map.SetUpdateLaserList(newPoint, new Vector3(0, Input.GetAxisRaw("Vertical"), 0));
+                moving = true;
             }
         }
     }

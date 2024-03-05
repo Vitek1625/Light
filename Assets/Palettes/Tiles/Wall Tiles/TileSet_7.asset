@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1feb1511bf366f40b56bcefaa6b94a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 14988faaade9a8a4a819ab9305cb88b4, type: 3}
   m_Name: TileSet_7
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1792299273, guid: 22b43d69339c6c8499b75b3966398ee3, type: 3}
+  m_Sprite: {fileID: 1104729114, guid: 22b43d69339c6c8499b75b3966398ee3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
@@ -35,7 +35,7 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   lightLevel: 0
-  facing: 4
+  facing: 1
   sourceLightLevel: 2
-  isSource: 0
-  active: 0
+  activeFromStart: 1
+  powered: 1

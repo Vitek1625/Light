@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1feb1511bf366f40b56bcefaa6b94a0, type: 3}
   m_Name: TileSet_2
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1424248450, guid: 22b43d69339c6c8499b75b3966398ee3, type: 3}
+  m_Sprite: {fileID: -983262899, guid: 22b43d69339c6c8499b75b3966398ee3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
@@ -35,7 +35,3 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   lightLevel: 0
-  facing: 4
-  sourceLightLevel: 3
-  isSource: 0
-  active: 1

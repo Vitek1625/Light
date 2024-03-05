@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1feb1511bf366f40b56bcefaa6b94a0, type: 3}
-  m_Name: TileSet_1
+  m_Name: Shadows_9
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1238139026, guid: 22b43d69339c6c8499b75b3966398ee3, type: 3}
+  m_Sprite: {fileID: 605168140, guid: 321bf87351af6884ba8a1fb9a48d03fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
@@ -35,7 +35,7 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   lightLevel: 0
-  facing: 4
+  facing: 0
   sourceLightLevel: 0
   isSource: 0
   active: 0
