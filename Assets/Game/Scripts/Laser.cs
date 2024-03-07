@@ -55,7 +55,7 @@ public class Laser
 
     public void castRayTo(Vector2 pos, Vector2 direction)
     {
-        RaycastHit2D hit = Physics2D.Raycast(new Vector2(pos.x + direction.x/2, pos.y + direction.y/2), direction, Mathf.Infinity, barrier);
+        RaycastHit2D hit = Physics2D.Raycast(pos, direction, Mathf.Infinity, barrier);
         if (hit.collider != null)
         {
             //Debug.Log(hit.collider.gameObject.name);
